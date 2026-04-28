@@ -1,0 +1,50 @@
+<div class="d-flex flex-column vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark px-4" style="background-color: #1a1a2e;">
+    <span class="navbar-brand fw-semibold">
+      <i class="bi bi-wallet2 me-2"></i>Expense Tracker
+    </span>
+    <div class="d-flex align-items-center gap-3">
+      <span class="text-white-50" style="font-size: 14px;">
+        <i class="bi bi-person-circle me-1"></i>{{userName}}
+      </span>
+      <button class="btn btn-sm btn-outline-light">
+      <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- BODY -->
+  <div class="d-flex flex-grow-1 overflow-hidden">
+
+    <!-- SIDEBAR -->
+    <!-- <div class="d-flex flex-column p-3 gap-1" style="width: 220px; background-color: #16213e;">
+      <a href="#" class="sidebar-link active">
+        <i class="bi bi-grid-1x2"></i> Dashboard
+      </a>
+      <a href="#" class="sidebar-link">
+        <i class="bi bi-list-ul"></i> Expenses
+      </a>
+      <a href="#" class="sidebar-link">
+        <i class="bi bi-plus-circle"></i> Add Expense
+      </a>
+    </div> -->
+
+    <!-- MAIN CONTENT -->
+    <div id="bodyContent" class=" p-4 overflow-auto" style="background-color: #f8f9fa;">
+        <div id="expense-dashboard">
+            <div class="row">
+                <div class="col dashboard-card">
+  Card 1
+</div>
+<div class="col dashboard-card">
+  Card 2
+</div>
+            </div>
+        </div>
+        <div id="expense-list-content"><app-expense-list></app-expense-list></div>
+    </div>
+
+  </div>
+</div>
